@@ -16,7 +16,7 @@ async function render() {
 
     filteredBD.forEach(venta => {
         const row = document.createElement("tr");
-        [venta.cliente.nombre, venta.fechaVenta, venta.estado, venta.total].forEach(value => {
+        [venta.id, venta.cliente.id, venta.fechaVenta, venta.estado, venta.fechaModificacion].forEach(value => {
             const cell = document.createElement("td");
             cell.textContent = value;
             row.append(cell);
